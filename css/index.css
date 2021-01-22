@@ -14,6 +14,17 @@
     src: url("./../../assets/fonts/Muli-ExtraBold.ttf") format("truetype");
     font-style: normal;
 }
+@font-face {
+    font-family: "MuliBlack";
+    src: url("./../../assets/fonts/Muli-Black.ttf") format("truetype");
+    font-style: normal;
+}
+@font-face {
+    font-family: "MuliItalic";
+    src: url("./../../assets/fonts/Muli-Italic.ttf") format("truetype");
+    font-style: normal;
+}
+
 
 /* common styles=====*/
 body{
@@ -42,7 +53,6 @@ ul {
     margin: 65px 100px 105px 100px;
 }
 
-
 /* menu=====*/
 .menu__list {
     border: 1px solid red; 
@@ -64,12 +74,10 @@ ul {
     color: #ffffff;
 }
 
-
 /* logo=====*/
 .logo{
     border: 1px solid red; 
 }
-
 
 /* header_right-bloc=====*/
 .header_right-bloc {
@@ -77,7 +85,6 @@ ul {
     display: flex;
     align-items: center;
 }
-
 
 /* personal=====*/
 .personal__list { 
@@ -107,7 +114,6 @@ ul {
     text-decoration: none;
 }
 
-
 /* social=====*/
 .social__list {
     border: 1px solid red; 
@@ -130,7 +136,6 @@ ul {
     text-align: center;
 }
 
-
 /* header__content=====*/
 .header__content {
     border: 1px solid red;
@@ -138,8 +143,7 @@ ul {
     justify-content: center;
 }
 
-
-/* btn=====*/
+/* header__btn=====*/
 .header__btn {
     width: 280px;
     height: 70px;
@@ -147,13 +151,13 @@ ul {
     border: none;
     font-size: 24px;
     color: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 0 40px;
 }
 .btn {
     font-family: "MuliExtraBold";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .btn--green-bg {
     background-color: #0aa566;
@@ -171,7 +175,6 @@ ul {
     margin: 100px 0 110px 0;
 }
 
-
 /* smoothies__title=====*/
 .smoothies__title {
     text-align: center;
@@ -179,14 +182,12 @@ ul {
     margin-bottom: 55px;
 }
 
-/* title=====*/
 .title {
     font-family: "MuliExtraBold";
     font-size: 50px;
     line-height: 0.8;
 }
 
-/* title--orange=====*/
 .title--orange {
     color: #f7ae3b;
 }
@@ -199,13 +200,11 @@ ul {
     width: 915px;
 }
 
-/* text=====*/
 .text{
     font-size: 18px;
     line-height: 1.94;
 }
 
-/* text--black=====*/
 .text--black {
     color: #1e1e1e;
 }
@@ -220,7 +219,6 @@ ul {
     grid-gap: 2px;
 }
 
-/* features__item=====*/
 .features__item {
     display: flex;
     flex-direction: column;
@@ -229,16 +227,138 @@ ul {
     background-color: #ffffff;
 }
 
-/* features__img====*/
 .features__img {
     margin-bottom: 30px;
 }
 
-/* features__item-title====*/
 .features__item-title {
     font-family: "MuliExtraBold";
     font-size: 25px;
     color: #f2612d;
     line-height: 1.6;
     letter-spacing: -0.5px;
+}
+
+
+/* about blog=================================*/
+.about {
+    background-color: #14826f;
+    border: 1px solid red;
+    background-size: cover;
+    display: flex;
+
+}
+
+/* about__img====*/
+.about__img {
+}
+
+/* about__box====*/
+.about__box {
+    border: 1px solid red;
+}
+
+/* about__title====*/
+.about__title {
+    font-family: "MuliExtraBold";
+    font-size: 55px;
+    width: 615px;
+    color: #ffffff;
+    letter-spacing: -1.1px;
+    line-height: 1.09;
+    border: 1px solid red;
+}
+
+.title--green {
+    color: #cae941;
+}
+
+/* desc__list====*/
+.desc__list {
+    font-size: 21px;
+    line-height: 1.05;
+    color: #ffffff;
+    border: 1px solid red;
+}
+
+.desc__item {
+    list-style-image: url("./../../assets/images/about/about-marker1.png")
+}
+
+.desc__item--font-black {
+    font-family: "MuliBlack";
+}
+
+/* about__btn====*/
+    .about__btn{
+    width: 380px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 21px;
+    color: #ffffff;
+    padding: 0 39px 0 29px;
+}
+
+.btn--border-orange {
+    background-color: transparent;
+    border: solid 2px #f8b231;
+}
+
+
+/* Products=================================*/
+.products {
+    display: flex;
+}
+
+.products__item {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    font-family: "MuliBold";
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 22px;
+}
+
+.products__item-dark {
+    background-color: #632b17;
+
+}
+
+.products__item-vegan {
+    background-color: #178670;
+    
+}
+
+.product-item-lemon {
+    background-color: #f7ae3b;
+}
+
+.product-item-garlic {
+    background-color: #c3471b;
+}
+
+.products__capacity {
+    font-family: "MuliItalic";
+    line-height: 32px;
+    font-size: 21px;
+}
+
+.products__img {
+    padding: 130px 0 34px 0;
+}
+
+.products__btn {
+    width: 204px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #ffffff;
+    margin: 66px 0 79px 0;
+}
+
+.btn--border-white {
+    border: solid 2px #ffffff;
+    padding: 0 36px;
 }

@@ -34,13 +34,11 @@
 /* common styles=====*/
 body{
     font-family: "MuliRegular";
-    background-color: black;
 }
 ul {
     list-style: none;
     margin: 0;
 }
-
 
 
 /* header blog=================================*/
@@ -49,10 +47,8 @@ ul {
     background: url("./../../assets/images/header/header-bg-img.png");
     background-position: center;
     background-size: cover;
-    border: 1px solid red;
 }
 .header__top {
-    border: 1px solid red; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,7 +57,6 @@ ul {
 
 /* menu=====*/
 .menu__list {
-    border: 1px solid red; 
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -80,21 +75,15 @@ ul {
     color: #ffffff;
 }
 
-/* logo=====*/
-.logo{
-    border: 1px solid red; 
-}
 
 /* header_right-bloc=====*/
 .header_right-bloc {
-    border: 1px solid red;
     display: flex;
     align-items: center;
 }
 
 /* personal=====*/
 .personal__list { 
-    border: 1px solid red; 
     display: flex;
     position: relative;
 }
@@ -117,12 +106,11 @@ ul {
 .personal__list-item:last-child {
     margin: 0;
 }
+
 .header__personal {
     margin-right: 136px;
     position: relative;
 }
-
-
 
 .personal__cart-count {
     background-color: #ffffff;
@@ -142,7 +130,6 @@ ul {
 
 /* social=====*/
 .social__list {
-    border: 1px solid red; 
     display: flex;
 }
 .social__list-item{
@@ -164,7 +151,6 @@ ul {
 
 /* header__content=====*/
 .header__content {
-    border: 1px solid red;
     display: flex;
     justify-content: center;
 }
@@ -183,10 +169,20 @@ ul {
     padding-left: 30px;
     color: #ffffff;
 }
+
 .btn--green-bg {
     background-color: #0aa566;
     position: relative;
 }
+
+.btn:hover {
+    background-color:rgb(16, 214, 138);
+}
+
+.btn:active {
+    box-shadow: 0 0 20px rgba(0,0,0,0.9);
+}
+
 .btn--green-bg::after {
     content: "";
     display: inline-block;
@@ -203,7 +199,6 @@ ul {
 /* Smoothies blog=================================*/
 .smoothies {
     background-color: #ffffff;
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -213,7 +208,6 @@ ul {
 /* smoothies__title=====*/
 .smoothies__title {
     text-align: center;
-    border: 1px solid red; 
 }
 
 .title {
@@ -230,7 +224,6 @@ ul {
 .smoothies__text {
     text-align: center;
     margin: 55px 0 60px 0;
-    border: 1px solid red; 
     width: 915px;
 }
 
@@ -248,7 +241,6 @@ ul {
     display: grid;
     grid-template-rows: repeat(2, 195px);
     grid-template-columns: repeat(4, 250px);
-    border: 1px solid red; 
     background-color: #f6edde;
     grid-gap: 2px;
 }
@@ -277,11 +269,9 @@ ul {
 /* about blog=================================*/
 .about {
     background-color: #14826f;
-    border: 1px solid red;
 }
 
-.about__wrapper {
-    border: 1px solid red;
+.about__wrapper { 
     display: flex;
     width: 1628px;
     margin-left: auto;
@@ -291,13 +281,11 @@ ul {
 
 /* about__img====*/
 .about__img {
-    border: 1px solid red;
     margin-right: 142px;
 }
 
 /* about__box====*/
 .about__box {
-    border: 1px solid red;
     margin-top: 35px;
 }
 
@@ -309,18 +297,29 @@ ul {
     color: #ffffff;
     letter-spacing: -1.1px;
     line-height: 60px;
-    border: 1px solid red;
+    
 }
 
 .title--green {
     color: #cae941;
+    position: relative;
+}
+
+.title--green::after {
+    content:"";
+    display: inline-block;
+    width: 450px;
+    height: 13px;
+    background-image: url("./../../assets/images/about/about-line.png");
+    position: absolute;
+    top: 61px;
+    right: -12px;
 }
 
 /* desc__list====*/
 .desc__list {
     font-size: 21px;
     line-height: 1.05;
-    border: 1px solid red;
     color: #ffffff;
     margin: 53px 0px 50px 22px;
 }
@@ -442,23 +441,30 @@ ul {
     display: flex;
     justify-content: center;
     background-color:#ffffff;
-    border: 1px solid red;
     padding: 120px 0 160px 0;
 }
 
-.story__about{
-    border: 1px solid red;
+.story__about {
     margin-right: 206px;
+    position: relative;
+}
+
+.story__about::after {
+    content: "";
+    width: 290px;
+    height: 216px;
+    background-image:url("./../../assets/images/story/story-stamp-img.png");
+    position: absolute;
+    top: 25px;
+    right: -330px;
 }
 
 .story__title {
-    border: 1px solid red;
     margin-top: 140px;
 }
 
 .story__text {
     width: 516px;
-    border: 1px solid red;
     margin: 43px 0 60px 0;
 }
 
@@ -473,18 +479,37 @@ ul {
     line-height: 1.05;
 }
 
-.story__img {
-}
-
 
 /* Testimonials=================================*/
 .testimonials{
-    border: 1px solid red;
     background-color: #672f1b;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 120px 0 80px 0;
+    position: relative;
+}
+.testimonials::after{
+    content:"";
+    display: inline-block;
+    width: 410px;
+    height: 301px;
+    background-image: url("./../../assets/images/testimonials/testimonials-dots-ing.png");
+    position: absolute;
+    top: -75px;
+    right: 95px;
+}
+
+.testimonials::before{
+    content:"Sarah A";
+    font-family: "MuliExtraBold";
+    font-size: 200px;
+    line-height: 0.2;
+    letter-spacing: -4px;
+    color: rgba(82, 25, 5, 0.6);
+    position: absolute;
+    top: 302px;
+    right: 730px;
 }
 
 .title--love {
@@ -493,12 +518,12 @@ ul {
 
 .testimonials__feedback {
     display: flex;
-    border: 1px solid red;
     align-items:center;
+    position: relative;
+    z-index: 1;
 }
 
 .testimonials__feedback-inner {
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -527,7 +552,6 @@ ul {
     width: 160px;
     display: flex;
     justify-content: space-between;
-    border: 1px solid red;
 }
 
 .testimonials__btn {
@@ -535,37 +559,40 @@ ul {
     background-color: transparent;
 }
 
-.testimonials__arrow {
-
+.testimonials__btn:hover {
+    background-color: #492112;
 }
-
 
 /* Blog=================================*/
 .blog {
-    border: 1px solid red;
     display: flex;
     background-color:#ffffff;
     justify-content: center;
     padding: 100px 0 200px 0;
 }
 
-.blog__box-left{ 
-    border: 1px solid red;
-}
-
-.blog__title {
-}
-
 .blog__img {
     margin: 49px 63px 0 0;
+    position: relative;
+    z-index: 1;
 }
 
-.blog__box-right{
-    border: 1px solid red;
+.blog__box-right{ 
     margin-top: 230px;
+    position: relative;
 }
 
-.blog__article {   
+.blog__box-right::before {
+    content:"";
+    display: inline-block;
+    width: 687px;
+    height: 12px;
+    background-color: #f7ae3b;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    position: absolute;
+    top: -63px;
+    left: -95px;
 }
 
 .article__subtitle {
@@ -577,8 +604,6 @@ ul {
     margin-bottom: 19px;
 }
 
-.article__date {
-}
 
 .article__text {
     width: 472px;
@@ -586,9 +611,6 @@ ul {
     margin: 45px 0 0 63px;
 }
 
-.article__date::first-line {
-    line-height: 1;
-}
 
 .article__link {
     font-family: "MuliExstraBoldItalic";
@@ -597,7 +619,6 @@ ul {
 }
 /* Instagram=================================*/
 .instagram {
-    border: 1px solid red;
     background-color: #ffffff;
 }
 
@@ -629,15 +650,13 @@ ul {
     background-color: #f6ab3b;
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
+    
 }
 
 .footer__content{
     display: flex;
     justify-content: center;
     padding: 80px 0 93px 0;
-    border: 1px solid red;
-    
 }
 
 /* footer__logo====*/
@@ -647,7 +666,6 @@ ul {
 
 /* footer__information====*/
 .footer__information {
-    border: 1px solid red;
     margin: 0 173px 0 296px;
 }
 
@@ -669,15 +687,9 @@ ul {
     color: #6d450c;
 }
 
-.footer__list {
-};
 
 /* footer__payment====*/
-.footer__payment-wrapper {
-}
-
 .footer__payment {
-    border: 1px solid red;
     margin-right: 166px;
 }
 
@@ -700,14 +712,6 @@ ul {
 }
 
 /* footer__subscribe ====*/
-.footer__subscribe {
-    border: 1px solid red;
-}
-    
-
-.footer__subscribe-email{
-}
-
 .footer__input{
     width: 495px;
     height: 60px;
@@ -727,8 +731,6 @@ ul {
     margin: 27px 50px 0 0;
 }
 
-.footer__subscribe-text {}
-
 .footer__social-link {
     margin-left: 25px;
 }
@@ -737,12 +739,7 @@ ul {
     margin-left: 43px;
 }
 
-.footer__social {
-    border: 1px solid red;
-}
-
 .footer__subscribe-text {
-    border: 1px solid red;
     position: relative;
 }
 
@@ -773,7 +770,6 @@ ul {
     letter-spacing: 0.26px;
     font-size: 13px;
     text-align: center;
-
 }
 
 .footer__wrapper {
@@ -787,10 +783,7 @@ ul {
     font-size: 16px;
     font-family: "MuliBold";
     position: relative;
-
 }
-
-
 
 .footer__btn-top {
     background-color: #f2662f;

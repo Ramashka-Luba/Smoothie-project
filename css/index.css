@@ -32,8 +32,11 @@
 
 
 /* common styles=====*/
+
+html,
 body{
     font-family: "MuliRegular";
+    font-size: 10px;
 }
 ul {
     list-style: none;
@@ -41,7 +44,7 @@ ul {
 }
 
 
-/* header blog=================================*/
+/* header =================================*/
 .header {
     height: 100vh;
     background: url("./../../assets/images/header/header-bg-img.png");
@@ -49,12 +52,50 @@ ul {
     background-size: cover;
 }
 .header__top {
+    position: relative;
+    padding: 65px 100px 123px 100px; 
+}
+
+/* кнопка бургер меню для медиазапроса===*/
+.header__burger-btn {
+    /*уберем у кнопки стили по умолчанию*/
+    background-color: transparent;
+    border: none;
+
+    width: 40px;
+    display: none;
+}
+.header__burger-btn-icon {
+    width: 100%;
+}
+/* кнопка назад для медиазапроса===*/
+.header__back-btn {
+    background-color: transparent;
+    border: none;
+
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+.header__back-btn-icon{
+    width: 100%;
+}
+
+
+/* header__navigation=====*/
+.header__navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 65px 100px 105px 100px;
 }
 
+/* header__logo=====*/
+.header__logo {
+    position: absolute;
+    top: 57px;
+    left: 50%;
+    transform: translate(-50%);
+}
 /* menu=====*/
 .menu__list {
     display: flex;
@@ -68,7 +109,7 @@ ul {
     margin: 0;
 }
 .menu__link {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-family: "MuliBold";
     text-decoration: none;
     text-transform: uppercase;
@@ -117,7 +158,7 @@ ul {
     display: inline-block;
     width: 18px;
     height: 18px;
-    font-size: 10px;
+    font-size: 1rem;
     text-align: center;
     line-height: 2;
     border-radius: 50%;
@@ -161,7 +202,7 @@ ul {
     height: 70px;
     border-radius: 35px;
     border: none;
-    font-size: 24px;
+    font-size: 2.4rem;
 }
 .btn {
     font-family: "MuliExtraBold";
@@ -212,7 +253,7 @@ ul {
 
 .title {
     font-family: "MuliExtraBold";
-    font-size: 50px;
+    font-size: 5rem;
     line-height: 0.8;
 }
 
@@ -224,11 +265,12 @@ ul {
 .smoothies__text {
     text-align: center;
     margin: 55px 0 60px 0;
-    width: 915px;
+    max-width: 915px;
+    width: 100%;
 }
 
 .text{
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 1.94;
 }
 
@@ -259,7 +301,7 @@ ul {
 
 .features__item-title {
     font-family: "MuliExtraBold";
-    font-size: 25px;
+    font-size: 2.5rem;
     color: #f2612d;
     line-height: 1.6;
     letter-spacing: -0.5px;
@@ -802,4 +844,78 @@ ul {
     width: 13px;
     height: 25px;
     background-image: url("./../../assets/images/footer/footer-btn-arrow-top.png");
+}
+
+
+/* Header=============================*/
+/* запрос для бургер меню*/
+@media (max-width: 768px) {
+    .header__navigation {
+        display: none;
+    }
+    .header__burger-btn {
+        display: block;
+        position: fixed;
+        right: 40px;
+        top: 40px;
+    }
+
+/* запрос после нажатия бургер-меню*/
+/* @media (max-width: 768px) {
+    .header__back-btn {
+        display: block;
+        position: fixed;
+        left: 40px;
+        top: 40px;
+        z-index: 2;
+    }
+    .header__navigation {
+        background-color:#178670;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+        display: flex;
+        flex-direction:column-reverse;
+        justify-content: flex-end;
+        padding-top: 150px;
+    }
+    .menu__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 400px;
+        margin-top: 150px;
+    }
+    .menu__item {
+        margin-right: 0;
+    }
+}  */
+
+/* Smoothies=============================*/
+.smoothies {
+    padding: 80px 15px;
+}
+.title {
+    font-size: 4rem;
+}
+.smoothies__text {
+    margin: 50px 0;
+}
+.smoothies__features {
+    grid-template-rows: repeat(4, 180px);
+    grid-template-columns: repeat(2, 210px);
+}
+.features__img {
+    margin-bottom: 20px;
+    height: 55px;
+}
+.features__item-title {
+    font-size: 2rem;
+}
+
+/* About=============================*/
+
 }

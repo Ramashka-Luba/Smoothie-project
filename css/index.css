@@ -308,14 +308,15 @@ ul {
 }
 
 
-/* about blog=================================*/
+/* About =================================*/
 .about {
     background-color: #14826f;
 }
 
 .about__wrapper { 
     display: flex;
-    width: 1628px;
+    max-width: 1628px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     transform: translateY(75px);
@@ -334,8 +335,9 @@ ul {
 /* about__title====*/
 .about__title {
     font-family: "MuliExtraBold";
-    font-size: 55px;
-    width: 615px;
+    font-size: 5.5rem;
+    max-width: 615px;
+    width: 100%;
     color: #ffffff;
     letter-spacing: -1.1px;
     line-height: 60px;
@@ -360,7 +362,7 @@ ul {
 
 /* desc__list====*/
 .desc__list {
-    font-size: 21px;
+    font-size: 2.1rem;
     line-height: 1.05;
     color: #ffffff;
     margin: 53px 0px 50px 22px;
@@ -384,7 +386,7 @@ ul {
     width: 380px;
     height: 60px;
     border-radius: 30px;
-    font-size: 21px;
+    font-size: 2.1rem;
     padding: 0 39px 0 29px;
 }
 
@@ -896,7 +898,7 @@ ul {
 
 /* Smoothies=============================*/
 .smoothies {
-    padding: 80px 15px;
+    padding: 80px 30px;
 }
 .title {
     font-size: 4rem;
@@ -917,5 +919,75 @@ ul {
 }
 
 /* About=============================*/
+.about__wrapper { 
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.about__img {
+    margin: 50px 20px 0 20px;
+    width: 100%;
+}
+.about__box {
+    margin-top: 0;
+}
+.about__title {
+    max-width: 470px;
+    width: 100%;
+}
+.title--green::after {
+    max-width: 350px;
+    width: 100%;
+}
+
+/* desc__list====*/
+/* .desc__list {
+    font-size: 21px;
+    line-height: 1.05;
+    color: #ffffff;
+    margin: 53px 0px 50px 22px;
+} */
+
+/* .desc__item {
+    list-style-image: url("./../../assets/images/about/about-marker1.png");
+    padding: 0 0 23px 19px;
+} */
+
+/* .desc__item:last-child{
+    padding-bottom: 0;
+} */
+
+/* .desc__item--font-black {
+    font-family: "MuliBlack";
+} */
+
+/* about__btn====*/
+    /* .about__btn{
+    width: 380px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 21px;
+    padding: 0 39px 0 29px;
+} */
+
+/* .btn--border-orange {
+    background-color: transparent;
+    border: solid 2px #f8b231;
+    position: relative;
+} */
+
+/* .btn--border-orange::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 30px;
+    height: 16px;
+    background-image: url("./../../assets/images/about/about-btn-arrow-yellow.png");
+    top: 50%;
+    right: 39px;
+    transform: translateY(-50%);
+} */
+
+
 
 }

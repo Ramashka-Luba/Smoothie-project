@@ -920,6 +920,8 @@ ul {
 }
 .title {
     font-size: 4rem;
+    line-height: 1.2;
+
 }
 .smoothies__text {
     margin: 50px 0;
@@ -937,13 +939,21 @@ ul {
 }
 
 /* About=============================*/
+.about {
+    padding: 70px 30px;
+}
 .about__wrapper { 
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     transform: translateY(0);
-    padding: 70px 30px;
 }
+.about__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .about__img {
     margin: 50px 0 0;
     width: 80%;
@@ -966,11 +976,85 @@ ul {
 }
 .products__item {
     flex: 1 0 70%;
+
 }
 .products__img {
-    padding: 60px 0 34px 0;
-    width: 25%;
+    /* padding: 60px 0 34px 0; */
+    /* width: 25%; */
+    padding: calc(40px + (60 - 40) * ((100vw - 360px) / (1920 - 360)));
+    
 }
+
+
+
+
+/* .products {
+    display: flex;
+}
+
+.products__item {
+    flex: 1 0 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    font-family: "MuliBold";
+    color: #ffffff;
+    font-size: 2.4rem;
+    line-height: 22px;
+}
+
+.products__item-dark {
+    background-color: #632b17;
+}
+.products__item-vegan {
+    background-color: #178670;
+}
+.product-item-lemon {
+    background-color: #f7ae3b;
+}
+.product-item-garlic {
+    background-color: #c3471b;
+}
+
+.products__capacity {
+    font-family: "MuliItalic";
+    line-height: 32px;
+    font-size: 2.1rem;
+}
+
+.products__img {
+    padding: 130px 0 34px 0;
+}
+
+/* products__btn====*/
+/* .products__btn {
+    max-width: 204px;
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+    background-color: transparent;
+    margin: 66px 0 79px 0;
+}
+
+.btn--border-white {
+    border: solid 2px #ffffff;
+    padding: 0 36px;
+    position: relative;
+}
+
+.btn--border-white::after {
+    content:"";
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    height: 16px;
+    background-image: url("./../../assets/images/product/products-btn-arrow-white1.png");
+    top: 50%;
+    right: 36px;
+    transform: translateY(-50%); */ 
+
+
+
 
 /* Story=================================*/
 .story {
@@ -1101,7 +1185,31 @@ ul {
 }
 .features__item-title {
     font-size: 1.5rem;
+}   
+
+/* About=============================*/
+.about {
+    padding: 60px 15px;
 }
+.title--green::after {
+top: 40px;
+right: 2px;
+}
+.desc__item {
+    padding: 0 0 13px 10px;
+    font-size: 1.5rem;
+}
+.desc__list {
+    margin: 42px 0px 42px 22px;
+}
+.about__btn {
+    font-size: 1.5rem;
+}
+.about__img {
+margin: 36px 0 0;
+}
+
+
 
 
 }

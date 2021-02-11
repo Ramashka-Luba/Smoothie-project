@@ -1,3 +1,7 @@
+// out: ../css/main.min.css, compress: true, sourceMap: true
+
+
+
 /* fonts=======*/
 @font-face {
     font-family: "MuliRegular";
@@ -43,198 +47,12 @@ ul {
     margin: 0;
 }
 
-
-/* header =================================*/
-.header {
-    height: 100vh;
-    background: url("./../../assets/images/header/header-bg-img.png");
-    background-position: center;
-    background-size: cover;
-}
-.header__top {
-    position: relative;
-    padding: 65px 100px 123px 100px; 
-}
-
-/* кнопка бургер меню для медиазапроса===*/
-.header__burger-btn {
-    /*уберем у кнопки стили по умолчанию*/
-    background-color: transparent;
-    border: none;
-
-    width: 40px;
-    display: none;
-}
-.header__burger-btn-icon {
-    width: 100%;
-}
-/* кнопка назад для медиазапроса===*/
-.header__back-btn {
-    background-color: transparent;
-    border: none;
-
-    width: 40px;
-    height: 40px;
-    display: none;
-}
-.header__back-btn-icon{
-    width: 100%;
-}
-
-
-/* header__navigation=====*/
-.header__navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* header__logo=====*/
-.header__logo {
-    position: absolute;
-    top: 57px;
-    left: 50%;
-    transform: translate(-50%);
-}
-/* menu=====*/
-.menu__list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.menu__item {
-    margin-right: 35px;
-}
-.menu__item:last-child {
-    margin: 0;
-}
-.menu__link {
-    font-size: 1.6rem;
-    font-family: "MuliBold";
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #ffffff;
-}
-
-
-/* header_right-bloc=====*/
-.header_right-bloc {
-    display: flex;
-    align-items: center;
-}
-
-/* personal=====*/
-.personal__list { 
-    display: flex;
-    position: relative;
-}
-.personal__list-item {
-    margin-right: 45px;
-}
-
-.personal__list::after {
-    content:"";
-    display: inline-block;
-    height: 2px;
-    width: 50px;
-    background-color: #ffd68f;
-    position: absolute;
-    top: 50%;
-    right: -90px;
-    transform: translateY(50%);
-}
-
-.personal__list-item:last-child {
-    margin: 0;
-}
-
-.header__personal {
-    margin-right: 136px;
-    position: relative;
-}
-
-.personal__cart-count {
-    background-color: #ffffff;
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    font-size: 1rem;
-    text-align: center;
-    line-height: 2;
-    border-radius: 50%;
-    color: #000000; 
-    text-decoration: none;
-    position: absolute;
-    top: -10px;
-    right: -15px;
-}
-
-/* social=====*/
-.social__list {
-    display: flex;
-}
-.social__list-item{
-    margin-left: 10px;
-}
-.social__list-item:first-child {
-    margin: 0%;
-}
-.social__link {
-    background-color: #ffffff;
-    width: 35px;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    border-radius: 50%;
-    text-align: center;
-}
-
-/* header__content=====*/
-.header__content {
-    display: flex;
-    justify-content: center;
-}
-
-/* header__btn=====*/
-.header__btn {
-    width: 280px;
-    height: 70px;
-    border-radius: 35px;
-    border: none;
-    font-size: 2.4rem;
-}
-.btn {
-    font-family: "MuliExtraBold";
-    text-align: left;
-    padding-left: 30px;
-    color: #ffffff;
-}
-
-.btn--green-bg {
-    background-color: #0aa566;
-    position: relative;
-}
-
-.btn:hover {
-    background-color:rgb(16, 214, 138);
-}
-
-.btn:active {
-    box-shadow: 0 0 20px rgba(0,0,0,0.9);
-}
-
-.btn--green-bg::after {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    width: 30px;
-    height: 16px;
-    background-image: url("./../../assets/images/header/header-btn-arrow-yellow.png");
-    top: 50%;
-    right: 38px;
-    transform: translateY(-50%);
-}
+// --------------------BLOCKS--------------------//
+@import "./blocks/_button.less";
+@import "./blocks/_header.less";
+@import "./blocks/_menu.less";
+@import "./blocks/_personal.less";
+@import "./blocks/_social.less";
 
 
 /* Smoothies blog=================================*/
@@ -868,53 +686,10 @@ ul {
 }
 
 
-/* Header=============================*/
+
 /* запрос для бургер меню*/
 @media (max-width: 768px) {
-    .header__navigation {
-        display: none;
-    }
-    .header__burger-btn {
-        display: block;
-        position: fixed;
-        right: 40px;
-        top: 40px;
-        z-index: 3;
-    }
-
-/* запрос после нажатия бургер-меню*/
-/* @media (max-width: 768px) {
-    .header__back-btn {
-        display: block;
-        position: fixed;
-        left: 40px;
-        top: 40px;
-        z-index: 2;
-    }
-    .header__navigation {
-        background-color:#178670;
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        z-index: 1;
-        display: flex;
-        flex-direction:column-reverse;
-        justify-content: flex-end;
-        padding-top: 150px;
-    }
-    .menu__list {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 400px;
-        margin-top: 150px;
-    }
-    .menu__item {
-        margin-right: 0;
-    }
-}  */
+    
 
 /* Smoothies=============================*/
 .smoothies {

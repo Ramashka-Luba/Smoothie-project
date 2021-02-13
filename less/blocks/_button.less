@@ -3,31 +3,28 @@
 .btn {
     font-family: "MuliExtraBold";
     text-align: left;
-    padding-left: 30px;
-    color: #ffffff;
-}
-
-.btn--green-bg {
-    background-color: #0aa566;
-    position: relative;
-}
-
-.btn:hover {
-    background-color:rgb(16, 214, 138);
-}
-
-.btn:active {
-    box-shadow: 0 0 20px rgba(0,0,0,0.9);
-}
-
-.btn--green-bg::after {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    width: 30px;
-    height: 16px;
-    background-image: url("./../../assets/images/header/header-btn-arrow-yellow.png");
-    top: 50%;
-    right: 38px;
-    transform: translateY(-50%);
+    padding-left: @paddingLeftButton;
+    color: @textColor;
+    border-radius: @borderRadius;
+    &--green-bg {
+        background-color: @secondary;
+        position: relative;
+        &::after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            width: 30px;
+            height: 16px;
+            background-image: url("./../../assets/images/header/header-btn-arrow-yellow.png");
+            top: 50%;
+            right: 38px;
+            transform: translateY(-50%);
+        }
+    }
+    &:hover {
+        background-color:rgb(16, 214, 138);
+    }
+    &:active {
+        box-shadow: 0 0 20px rgba(0,0,0,0.9);
+    }
 }

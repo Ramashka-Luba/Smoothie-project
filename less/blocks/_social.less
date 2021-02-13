@@ -1,21 +1,23 @@
 // main: ./../main.less
 
-.social__list {
-    display: flex;
-}
-.social__list-item{
-    margin-left: 10px;
-}
-.social__list-item:first-child {
-    margin: 0%;
-}
-.social__link {
-    background-color: #ffffff;
-    width: 35px;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    border-radius: 50%;
-    text-align: center;
+.social {
+    &__list {
+        display: flex;
+    }
+    &__list-item{
+        margin-left: 10px;
+        &:first-child {
+            margin: 0;
+        }
+    }
+    &__link {
+        background-color: #ffffff;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        border-radius: 50%;
+        text-align: center;
+    }
 }

@@ -1,0 +1,38 @@
+// main: ./../main.less
+
+.story {
+    display: flex;
+    justify-content: center;
+    background-color:#ffffff;
+    padding: 120px 0 160px 0;
+    &__about {
+        margin-right: 206px;
+        position: relative;
+        &::after {
+            content: "";
+            width: 290px;
+            height: 216px;
+            background-image:url("./../../assets/images/story/story-stamp-img.png");
+            position: absolute;
+            top: 25px;
+            right: -330px;
+        }
+    }
+    &__title {
+        margin-top: 140px;
+    }
+    &__text {
+        max-width: 516px;
+        width: 100%;
+        margin: 43px 0 60px 0;
+    }
+    &__btn {
+        max-width: 301px;
+        width: 100%;
+        height: 60px;
+        padding: 0 40px 0 30px;
+        border: none;
+        font-size: @baseFontSizeUnit * 2.1;
+        line-height: @baseLineHeightUnit;
+    }
+}

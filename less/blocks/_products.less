@@ -1,0 +1,44 @@
+// main: ./../main.less
+
+.products {
+    display: flex;
+    &__item {
+        flex: 1 0 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        font-family: @muliBold;
+        color: #ffffff;
+        font-size: @baseFontSizeUnit * 2.4;
+        line-height: @baseLineHeightUnit * 2.2;
+        &-dark {
+            background-color: #632b17;
+        }
+        &-vegan {
+            background-color: #178670;
+        }
+        &-lemon {
+            background-color: #f7ae3b;
+        }
+        &-garlic {
+            background-color: #c3471b;
+        }
+    }
+    &__capacity {
+        font-family: @muliItalic;
+        line-height: @baseLineHeightUnit * 3,2;
+        font-size: @baseFontSizeUnit * 2.1;
+    }
+    &__img {
+        padding: 130px 0 34px 0;
+        max-width: 119px;
+        width: 100%;
+    }
+    &__btn {
+        max-width: 204px;
+        width: 100%;
+        height: 60px;
+        background-color: @buttonSecondaryBackgroundColor;
+        margin: 66px 0 79px 0;
+    }
+}

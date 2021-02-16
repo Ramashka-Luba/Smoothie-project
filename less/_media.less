@@ -1,0 +1,325 @@
+// main: ./main.less
+
+@media (max-width: 768px) {
+
+    /* Header=============================*/
+    /* запрос для бургер меню*/
+    .header__navigation {
+        display: none;
+    }
+    .header__burger-btn {
+        display: block;
+        position: fixed;
+        right: 40px;
+        top: 40px;
+        z-index: 3;
+    }
+
+/* запрос после нажатия бургер-меню*/
+/* @media (max-width: 768px) {
+    .header__back-btn {
+        display: block;
+        position: fixed;
+        left: 40px;
+        top: 40px;
+        z-index: 2;
+    }
+    .header__navigation {
+        background-color:#178670;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+        display: flex;
+        flex-direction:column-reverse;
+        justify-content: flex-end;
+        padding-top: 150px;
+    }
+    .menu__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 400px;
+        margin-top: 150px;
+    }
+    .menu__item {
+        margin-right: 0;
+    }
+}  */
+
+/* Smoothies=============================*/
+.smoothies {
+    padding: 70px 30px;
+}
+.title {
+    font-size: 4rem;
+    line-height: 1.2;
+
+}
+.smoothies__text {
+    margin: 50px 0;
+}
+.smoothies__features {
+    grid-template-rows: repeat(4, 180px);
+    grid-template-columns: repeat(2, 210px);
+}
+.features__img {
+    margin-bottom: 20px;
+    height: 55px;
+}
+.features__item-title {
+    font-size: 2rem;
+}
+
+/* About=============================*/
+.about {
+    padding: 70px 30px;
+}
+.about__wrapper { 
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(0);
+}
+.about__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__img {
+    margin: 50px 0 0;
+    width: 80%;
+}
+.about__box {
+    margin-top: 0;
+}
+.about__title {
+    max-width: 470px;
+    width: 100%;
+}
+.title--green::after {
+    max-width: 350px;
+    width: 100%;
+}
+
+/* Products=============================*/
+.products {
+    overflow-x: auto;
+}
+.products__item {
+    flex: 1 0 70%;
+
+}
+
+.products__img {
+    padding: 60px 0 34px 0;
+    width: 25%; 
+}
+
+/*----------------*/
+/* .products__img {
+    padding-top: calc(40px + (60 - 40) * ((100vw - 360px) / (1920 - 360)));
+    padding-bottom: calc(25px + (60 - 25) * ((100vw - 360px) / (1920 - 360)));
+    width: calc(25% + (100 - 25) * ((100vw - 360px) / (1920 - 360)));
+}
+.products__item  {
+    font-size: calc(1.5rem + (2.4 - 1.5) * ((100vw - 360px) / (1920 - 360)));
+}
+.products__capacity {
+    font-size: calc(1.5rem + (2.4 - 1.5) * ((100vw - 360px) / (1920 - 360)));
+} */
+/*----------------*/
+
+/* Story=================================*/
+.story {
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 30px;
+}
+.story__about::after {
+    display: none;
+}
+.story__about {
+    margin-right: 0px;
+}
+.story__title {
+    margin-top: 0;
+}
+.story__btn {
+    margin-bottom: 30px;
+}
+.story__img {
+    max-width: 555px;
+    width: 100%;
+}
+
+
+/* Testimonials=================================*/
+.testimonials {
+    padding: 70px 30px;
+}
+.testimonials::after {
+    display: none;
+}
+.testimonials::before {
+    top: 56%;
+    right: 13%;
+    // font-size: 15rem;
+}
+.testimonials__feedback {
+    flex-direction: column-reverse;
+    margin: 40px 0;
+}
+.testimonials__feedback-inner {
+    margin: 40px 0 0 0;
+}
+
+/* Blog=================================*/
+.blog {
+    padding: 70px 30px;
+    flex-direction: column;
+    align-items: center;
+}
+.blog__img {
+    margin: 45px 0 45px 0;
+}
+.blog__box-right::before {
+    display: none;
+}
+.blog__box-right{ 
+    margin-top: 0;
+}
+
+/* Instagram=================================*/
+.instagram__picture-item {
+    overflow-x: auto;
+}
+.instagram-img-wrapper {
+    flex: 1 0 70%;
+
+}
+.instagram__img {
+    width: 70%;
+}
+
+/* Footer=================================*/
+.footer__content {
+    padding: 70px 30px;
+    flex-direction: column;
+}
+.footer__logo {
+    padding-top: 0;
+    text-align: center;
+}
+.footer__centre-blog {
+    justify-content: space-between;
+    margin: 40px 70px 60px;
+}
+.footer__information {
+    margin: 0;
+}
+.footer__title {
+    margin-bottom: 15px;
+}
+.footer__payment {
+    margin-right: 0;
+}
+.footer__subscribe {
+    // margin: 0 70px;
+    margin-right: calc(15px + (70 - 15) * ((100vw - 360px) / (768 - 360)));
+    margin-left: calc(15px + (70 - 15) * ((100vw - 360px) / (768 - 360)));
+}
+
+@media (max-width: 480px) {
+
+/* Header=============================*/
+.logo__img {
+    width: 80%;
+}
+.header__btn {
+    width: 65%;
+}
+
+
+/* Smoothies=============================*/
+.smoothies {
+    padding: 60px 15px;
+}
+.title {
+    font-size: 3rem;
+}
+.smoothies__text {
+    margin: 30px 0;
+}
+.text {
+    line-height:1.5;
+}
+.smoothies__features {
+    grid-template-rows: repeat(4, 150px);
+    grid-template-columns: repeat(2, 180px);
+}
+.features__img {
+    margin-bottom: 10px;
+    height: 45px;
+}
+.features__item-title {
+    font-size: 1.5rem;
+}   
+
+/* About=============================*/
+.about {
+    padding: 60px 15px;
+}
+.title--green::after {
+top: 40px;
+right: 2px;
+}
+.desc__item {
+    padding: 0 0 13px 10px;
+    font-size: 1.5rem;
+}
+.desc__list {
+    margin: 42px 0px 42px 22px;
+}
+.about__btn {
+    font-size: 1.5rem;
+}
+.about__img {
+margin: 36px 0 0;
+}
+
+/* Products=============================*/
+.products__name {
+    text-align: center;
+}
+.products__btn {
+    margin: 40px 0 60px 0;
+}
+
+/* Blog=============================*/
+.article__text {
+    margin: 45px 0 0 0;
+}
+
+/* Instagram=============================*/
+
+/* Footer=============================*/
+.footer__centre-blog {
+    flex-wrap: wrap;
+    margin: 30px 0 70px;
+}
+.footer__information {
+margin-bottom: 20px;
+}
+.footer__subscribe-social {
+    margin: 27px 0 0 0;
+}
+// .footer__subscribe {
+//     margin: 0 15px;
+// }
+
+}
+}

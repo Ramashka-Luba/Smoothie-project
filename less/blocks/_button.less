@@ -1,30 +1,64 @@
 // main: ./../main.less
 
 .btn {
-    font-family: "MuliExtraBold";
+    font-family: @muliExtraBold;
     text-align: left;
-    padding-left: @paddingLeftButton;
-    color: @textColor;
-    border-radius: @borderRadius;
+    padding-left: @buttonPaddingLeft;
+    color: @secondaryColorText;
+    border-radius: @buttonBorderRadius;
     &--green-bg {
-        background-color: @secondary;
+        background-color: @buttonPrimaryBackgroundColor;
         position: relative;
         &::after {
             content: "";
+            background-image: url("./../../assets/images/header/header-btn-arrow-yellow.png");
             display: inline-block;
             position: absolute;
             width: 30px;
             height: 16px;
-            background-image: url("./../../assets/images/header/header-btn-arrow-yellow.png");
             top: 50%;
             right: 38px;
             transform: translateY(-50%);
         }
     }
     &:hover {
-        background-color:rgb(16, 214, 138);
+        background-color: darken(@buttonPrimaryBackgroundColor, 5%); 
     }
     &:active {
         box-shadow: 0 0 20px rgba(0,0,0,0.9);
+    }
+    //----------about
+    &--border-orange {
+        background-color: @buttonSecondaryBackgroundColor;
+        border: solid 2px #f8b231;
+        position: relative;
+        &::after {
+            content: "";
+            background-image: url("./../../assets/images/about/about-btn-arrow-yellow.png");
+            display: inline-block;
+            position: absolute;
+            width: 30px;
+            height: 16px;
+            top: 50%;
+            right: 38px;
+            transform: translateY(-50%);
+        }
+    }
+    //----------products
+    &--border-white {
+        border: solid 2px #ffffff;
+        padding: 0 36px;
+        position: relative;
+        &::after {
+            content:"";
+            background-image: url("./../../assets/images/product/products-btn-arrow-white1.png");
+            position: absolute;
+            display: inline-block;
+            width: 30px;
+            height: 16px;
+            top: 50%;
+            right: 38px;
+            transform: translateY(-50%);
+        }
     }
 }

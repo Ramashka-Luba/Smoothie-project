@@ -1,0 +1,51 @@
+// main: ./../main.less
+
+
+.about {
+    background-color: #14826f;
+    &__wrapper { 
+        display: flex;
+        max-width: 1628px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        transform: translateY(75px);
+    }
+    &__img {
+        margin-right: 142px;
+    }
+    &__box {
+        margin-top: 35px;
+    }
+    &__title {
+        font-family: @muliExtraBold;
+        font-size: @baseFontSizeUnit * 5.5;
+        max-width: 615px;
+        width: 100%;
+        color: #ffffff;
+        letter-spacing: -1.1px;
+        line-height: 60px;
+    }
+    &__list {
+        font-size: @baseFontSizeUnit * 2.1;
+        line-height: @baseLineHeightUnit;
+        color: #ffffff;
+        margin: 53px 0px 50px 22px;
+    }
+    &__item {
+        list-style-image: url("./../../assets/images/about/about-marker1.png");
+        padding: 0 0 23px 19px;
+        &:last-child{
+            padding-bottom: 0;
+        }
+        &--font-black {
+            font-family: "MuliBlack";
+        }
+    }
+    &__btn{
+        max-width: 380px;
+        width: 100%;
+        height: 60px;
+        font-size: @baseFontSizeUnit * 2.1;
+    }
+}

@@ -1,0 +1,32 @@
+// main: ./../main.less
+
+.blog {
+    display: flex;
+    background-color:#ffffff;
+    justify-content: center;
+    padding: 100px 0 200px 0;
+    &__img {
+        max-width: 555px;
+        width: 100%;
+        margin: 49px 63px 0 0;
+        position: relative;
+        z-index: 1;
+    }
+    &__box-right{ 
+        margin-top: 230px;
+        position: relative;
+        &::before {
+            content:"";
+            display: inline-block;
+            width: 687px;
+            height: 12px;
+            background-color: #f7ae3b;
+            border-radius: 5px;
+            margin-bottom: 50px;
+            position: absolute;
+            top: -63px;
+            left: -95px;
+        }
+    }
+}
+

@@ -1,0 +1,28 @@
+// main: ./../main.less
+
+.title {
+    .title (@muliExtraBold, @fontSizeTitle, @lineHeightTitle);
+    &--orange {
+        color: @primaryColorTitle;
+    }
+    //---------about
+    &--green {
+        color: #cae941;
+        position: relative;
+        &::after {
+            content:"";
+            display: inline-block;
+            width: 450px;
+            height: 13px;
+            background-image: url("./../../assets/images/about/about-line.png");
+            position: absolute;
+            top: 61px;
+            right: -12px;
+            
+        }
+    }
+    //--------testimonials
+    &--love {
+        color: #f2612d;
+    }
+}

@@ -37,9 +37,9 @@
         position: relative;
         &::before{
             content:"Sarah A";
-            font-family: "MuliExtraBold";
+            font-family: @muliExtraBold;
             font-size: calc(80px + (200 - 80) * ((100vw - 360px) / (1920 - 360)));
-            line-height: 0.2;
+            line-height: @baseLineHeightUnit * 0.2;
             letter-spacing: -4px;
             color: rgba(82, 25, 5, 0.6);
             position: absolute;
@@ -62,7 +62,7 @@
     }
     &__btn {
         border: none;
-        background-color: transparent;
+        background-color: @buttonSecondaryBackgroundColor;
         &:hover {
             background-color: #492112;
         }

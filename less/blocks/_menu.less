@@ -10,13 +10,16 @@
         &:last-child {
             margin: 0;
         }
+        &:hover {
+            transform: scale(1.5);
+        }
     }
     &__link {
-        font-size: 1.6rem;
+        font-size: @baseFontSizeUnit * 1.6;
         font-family: @muliBold;
         text-decoration: none;
         text-transform: uppercase;
-        color: #ffffff;
+        color: @secondaryColorText;
     }
 }
 

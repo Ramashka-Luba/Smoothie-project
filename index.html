@@ -7,6 +7,7 @@
     <!-- Сюда подключаем стили -->
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./../libraries/WOW-master/css/libs/animate.css">
     <title>Document</title>
 </head>
 <boby>
@@ -157,7 +158,11 @@
 <!--About=============-->
 <section class="about">
     <div class="about__wrapper">
-        <img class="about__img" src="./../assets/images/about/about-Img.png" alt="">
+
+        <div class="wow fadeInLeftBig">
+            <img class="about__img" src="./../assets/images/about/about-Img.png" alt="">
+        </div>
+        
         <div class="about__box">
             <h2 class="about__title title title--white">What makes Smoothie an
                 <span class="title--green">awesome drink?</span></h2>
@@ -399,6 +404,13 @@
         </div>
     </div>
 </footer>
+
+
+
+<script src="./../libraries/WOW-master/dist/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 </body>
 
 </html>

@@ -159,9 +159,7 @@
 <section class="about">
     <div class="about__wrapper">
 
-        <div class="wow fadeInLeftBig">
-            <img class="about__img" src="./../assets/images/about/about-Img.png" alt="">
-        </div>
+            <img class="wow fadeInLeftBig about__img" data-wow-offset='500' src="./../assets/images/about/about-Img.png" alt="">
         
         <div class="about__box">
             <h2 class="about__title title title--white">What makes Smoothie an
@@ -247,7 +245,7 @@
         <button class="story__btn btn btn--green-bg">Who we are
         </button>
     </div>
-    <img class="story__img" src="./../assets/images/story/story-Img.png" alt="">
+    <img class="story__img your-element" data-tilt data-tilt-startX="20" data-tilt-startY="-20" src="./../assets/images/story/story-Img.png" alt="">
 
 </section>
 
@@ -284,7 +282,7 @@
 <section class="blog">
     <div class="blog__box-left">
         <h2 class="blog__title title title--orange">Our blog</h2>
-        <img class="blog__img" src="./../assets/images/blog/blog-img.png" alt="">
+        <img class="blog__img your-element" data-tilt data-tilt-scale="1.1" src="./../assets/images/blog/blog-img.png" alt="">
     </div>
     <div class="blog__box-right">
         <article class="blog__article article">
@@ -411,6 +409,10 @@
 <script>
     new WOW().init();
 </script>
+
+
+<script type="text/javascript" src="./../libraries/vanilla-tilt.min.js"></script>
+
 </body>
 
 </html>

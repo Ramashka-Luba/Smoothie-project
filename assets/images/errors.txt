@@ -1,0 +1,1 @@
+[2021-1-19 16:06:37] layer "blog-instagram-bg.pmg": Unsupported extension: pmg
